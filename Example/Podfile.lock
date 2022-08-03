@@ -1,0 +1,16 @@
+PODS:
+  - TTouchAnimatedButton (1.0.0)
+
+DEPENDENCIES:
+  - TTouchAnimatedButton (from `../`)
+
+EXTERNAL SOURCES:
+  TTouchAnimatedButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TTouchAnimatedButton: aca07a63660fa3fda8d3807bb766a91ab5a5a020
+
+PODFILE CHECKSUM: bb0e2de198100685c7d6e1aa6649176c6afff8fa
+
+COCOAPODS: 1.11.3
