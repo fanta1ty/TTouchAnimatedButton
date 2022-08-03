@@ -1,3 +1,5 @@
+![LOGO](https://github.com/fanta1ty/TTouchAnimatedButton/blob/master/ScreenShot/Logo.png)
+
 # TTouchAnimatedButton
 
 TTouchAnimatedButton is a simple and flexible animation component fully written in Swift. TTouchAnimatedButton is developed to make user feel button click becomes more vivid and realistic.
@@ -31,6 +33,8 @@ Just initial ``TTouchAnimatedButton`` to use, and you get the animation attachme
 ```swift
 let animatedButton = TTouchAnimatedButton()
 ```
+
+![alt text](https://github.com/fanta1ty/TTouchAnimatedButton/blob/master/ScreenShot/Screen%20Shot.gif)
 
 ## Requirements
 - iOS 9.3 or later
