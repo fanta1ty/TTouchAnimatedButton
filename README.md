@@ -34,7 +34,7 @@ Just initial ``TTouchAnimatedButton`` to use, and you get the animation attachme
 let animatedButton = TTouchAnimatedButton()
 ```
 
-![alt text](https://github.com/fanta1ty/TTouchAnimatedButton/blob/master/ScreenShot/Screen%20Shot.gif)
+![til](https://github.com/fanta1ty/TTouchAnimatedButton/blob/master/ScreenShot/Screen%20Shot.gif)
 
 ## Requirements
 - iOS 9.3 or later
