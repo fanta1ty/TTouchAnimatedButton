@@ -7,8 +7,8 @@
 
 import Foundation
 
-public class TTouchAnimatedButton: UIButton {
-    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+open class TTouchAnimatedButton: UIButton {
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         subviews.forEach { view in
             view.alpha = 0.5
         }
@@ -16,7 +16,7 @@ public class TTouchAnimatedButton: UIButton {
         super.touchesBegan(touches, with: event)
     }
 
-    public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         subviews.forEach { view in
             view.alpha = 1.0
         }
@@ -24,7 +24,7 @@ public class TTouchAnimatedButton: UIButton {
         super.touchesEnded(touches, with: event)
     }
 
-    public override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    open override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         isHighlighted = false
         subviews.forEach { view in
             view.alpha = 1.0
