@@ -14,16 +14,27 @@ TTouchAnimatedButton is a simple and flexible animation component fully written 
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
-TTouchAnimatedButton is available through [CocoaPods](https://cocoapods.org). To install
+### From CocoaPods
+`TTouchAnimatedButton` is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'TTouchAnimatedButton'
 ```
+
+Second, install `TProgressHUD` into your project:
+```ruby
+pod install
+```
+### Swift Package
+`TTouchAnimatedButton` is designed for Swift 5. To depend on the logging API package, you need to declare your dependency in your `Package.swift`
+
+```swift
+.package(url: "https://github.com/fanta1ty/TTouchAnimatedButton.git", brand: "master"),
+```
+
 ## Usage
 ```swift
 import TTouchAnimatedButton
@@ -37,8 +48,8 @@ let animatedButton = TTouchAnimatedButton()
 ![til](https://github.com/fanta1ty/TTouchAnimatedButton/blob/master/ScreenShot/Screen%20Shot.gif)
 
 ## Requirements
-- iOS 9.3 or later
-- Swift 5.0 or later
+- iOS 11.0+
+- Swift 5
 
 ## Author
 

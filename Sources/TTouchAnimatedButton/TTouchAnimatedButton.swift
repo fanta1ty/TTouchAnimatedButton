@@ -6,30 +6,31 @@
 //
 
 import Foundation
+import UIKit
 
 open class TTouchAnimatedButton: UIButton {
-    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         subviews.forEach { view in
             view.alpha = 0.5
         }
-        self.transform = CGAffineTransform(scaleX: 0.99, y: 0.99)
+        transform = CGAffineTransform(scaleX: 0.99, y: 0.99)
         super.touchesBegan(touches, with: event)
     }
 
-    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         subviews.forEach { view in
             view.alpha = 1.0
         }
-        self.transform = .identity
+        transform = .identity
         super.touchesEnded(touches, with: event)
     }
 
-    open override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         isHighlighted = false
         subviews.forEach { view in
             view.alpha = 1.0
         }
-        self.transform = .identity
+        transform = .identity
         super.touchesCancelled(touches, with: event)
     }
 }
